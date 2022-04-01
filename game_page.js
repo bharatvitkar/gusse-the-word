@@ -7,11 +7,11 @@ player2_score=0;
 document.getElementById("player1_name").innerHTML=player1_name+" : ";
 document.getElementById("player2_name").innerHTML=player2_name+" : ";
 
-document.getentById("player1_score").innerHTML=player1_score;
-document.getentById("player2_score").innerHTML=player2_score;
+document.getElementById("player1_score").innerHTML=player1_score;
+document.getElementById("player2_score").innerHTML=player2_score;
 
-document.getentById("player_question").innerHTML="Question turn- "+player1_name;
-document.getentById("player_answer").innerHTML="Answer turn- "+player1_name;
+document.getElementById("player_question").innerHTML="Question turn- "+player1_name;
+document.getElementById("player_answer").innerHTML="Answer turn- "+player2_name;
 
 function send()
 {
@@ -57,13 +57,13 @@ function check()
       {
           if(answer_turn=="player1")
           {
-              player1_score=player1_score+1
+              player1_score=player1_score+1;
               document.getElementById("player1_score").innerHTML=player1_score;
           }
           else
           {
-            player2_score=player2_score+1
-            document.getElementById("player1_score").innerHTML=player2_score;
+            player2_score=player2_score+1;
+            document.getElementById("player2_score").innerHTML=player2_score;
           }
       }
 
